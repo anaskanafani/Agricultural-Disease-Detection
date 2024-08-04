@@ -21,7 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = tf.keras.models.load_model('../models/tomato_disese_model_V1.keras')
+model = tf.keras.models.load_model('tomato_disese_model_V1.keras')
 
 class_names = ['Bacterial_spot', 'Healthy', 'Septoria_leaf_spot',
                'Spider_mites_Two_spotted_spider_mite', 'YellowLeaf__Curl_Virus']
