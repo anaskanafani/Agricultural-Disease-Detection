@@ -39,7 +39,7 @@ async def predict(file: UploadFile = File(...)):
     image = np.expand_dims(image, axis=0)
     prediction = model.predict(image)
     predicted_class = class_names[np.argmax(prediction)]
-    return {"class": predicted_class, "confidence": str(round(np.max(prediction) * 100, 2) + "%")}
+    return {"class": predicted_class, "confidence": str(np.max(prediction))}
 
 if __name__ == "__main__":
     uvicorn.run("main:app", host="localhost", port=8000, reload=True)
