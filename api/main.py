@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
+# Add CORS middleware
 origins = [
     "http://localhost:3000",
     "https://tomato-disease-cnn.vercel.app",
