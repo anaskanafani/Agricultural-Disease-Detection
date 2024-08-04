@@ -1,0 +1,9 @@
+tensorflow-cpu
+fastapi
+uvicorn
+python-multipart
+pillow
+matplotlib
+numpy
+gunicorn
+requests
