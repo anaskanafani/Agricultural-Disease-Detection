@@ -284,21 +284,19 @@ export default function Dashboard() {
                 />
               </div>
               <div className="flex items-center p-3 pt-0 z-20">
-                {loading ? (
-                  <Button disabled className="ml-auto gap-1.5 z-20">
-                    <ReloadIcon className=" mr-2 h-4 w-4 animate-spin" />
-                    Predicting
-                  </Button>
-                ) : (
-                  <Button
-                    type="submit"
-                    size="sm"
-                    className="ml-auto gap-1.5 z-20"
-                  >
-                    Predict Disease
+                <Button
+                  type="submit"
+                  size="sm"
+                  disabled={!image || loading}
+                  className="ml-auto gap-1.5 z-20"
+                >
+                  Predict Disease
+                  {loading ? (
+                    <ReloadIcon className="size-3.5 animate-spin" />
+                  ) : (
                     <CornerDownLeft className="size-3.5" />
-                  </Button>
-                )}
+                  )}
+                </Button>
               </div>
             </form>
           </div>
