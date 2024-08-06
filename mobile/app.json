@@ -2,6 +2,7 @@
   "expo": {
     "name": "Tomato CNN",
     "slug": "tomato-cnn",
+    "description": "Tomato CNN is a CNN for tomato diseases detection created by the Anas Kanafani.",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -32,6 +33,20 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "78fc2148-1209-4d5e-845b-07e658b0f98d"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/78fc2148-1209-4d5e-845b-07e658b0f98d"
     }
   }
 }
