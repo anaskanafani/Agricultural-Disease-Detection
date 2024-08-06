@@ -23,6 +23,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import React from "react";
 import Image from "next/image";
+import { ReloadIcon } from "@radix-ui/react-icons";
 
 const tomatoPlantDiseases = {
   Bacterial_spot: {
@@ -58,6 +59,7 @@ const tomatoPlantDiseases = {
 
 export default function Dashboard() {
   const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
+  const [loading, setLoading] = React.useState(false);
   const [image, setImage] = React.useState<File | null>(null);
   const [prediction, setPrediction] = React.useState<{
     class: string;
@@ -67,6 +69,7 @@ export default function Dashboard() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!image) return;
+    setLoading(true);
 
     const formData = new FormData();
     formData.append("file", image);
@@ -90,6 +93,7 @@ export default function Dashboard() {
         setIsDrawerOpen(true);
       }
     }
+    setLoading(false);
   };
 
   return (
@@ -280,14 +284,21 @@ export default function Dashboard() {
                 />
               </div>
               <div className="flex items-center p-3 pt-0 z-20">
-                <Button
-                  type="submit"
-                  size="sm"
-                  className="ml-auto gap-1.5 z-20"
-                >
-                  Predict Disease
-                  <CornerDownLeft className="size-3.5" />
-                </Button>
+                {loading ? (
+                  <Button disabled className="ml-auto gap-1.5 z-20">
+                    <ReloadIcon className=" mr-2 h-4 w-4 animate-spin" />
+                    Predicting
+                  </Button>
+                ) : (
+                  <Button
+                    type="submit"
+                    size="sm"
+                    className="ml-auto gap-1.5 z-20"
+                  >
+                    Predict Disease
+                    <CornerDownLeft className="size-3.5" />
+                  </Button>
+                )}
               </div>
             </form>
           </div>
