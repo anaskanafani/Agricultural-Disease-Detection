@@ -1,5 +1,5 @@
 
-# 🍅 Tomato Leaf Disease Detection with CNNs 📊
+# 🍅 Agricultural Disease Detection with CNNs 📊
 
 ## Deployment and Previews 🌐
 
