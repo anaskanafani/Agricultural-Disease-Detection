@@ -4,7 +4,7 @@
 ## Deployment and Previews 🌐
 
 ### API Documentation
-- **Deployed Link (Heroku):** [Tomato Disease API](https://tomato-disease-cnn-5f092777a81e.herokuapp.com/docs)
+- **Deployed Link (Heroku):** [Tomato Disease API](https://agri-cnn-081a2876da3f.herokuapp.com/docs)
 
 ### Website Interface
 - **Deployed Link:** [Tomato Disease Detection Website](https://tomato-disease-cnn.vercel.app)

@@ -75,7 +75,7 @@ export default function Dashboard() {
     formData.append("file", image);
 
     const response = await fetch(
-      "https://tomato-disease-cnn-5f092777a81e.herokuapp.com/predict",
+      "https://agri-cnn-081a2876da3f.herokuapp.com/predict",
       {
         method: "POST",
         body: formData,

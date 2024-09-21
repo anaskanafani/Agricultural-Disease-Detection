@@ -1,3 +1,5 @@
+# "deploy": "git subtree push --prefix api heroku main",
+
 from fastapi import FastAPI, File, UploadFile
 import uvicorn
 import numpy as np
