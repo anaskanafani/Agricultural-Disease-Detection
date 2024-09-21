@@ -1,7 +1,0 @@
-env
-__pycache__/
-dataset
-models
-training
-web
-mobile
