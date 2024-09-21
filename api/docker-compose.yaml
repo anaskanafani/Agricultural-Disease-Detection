@@ -1,8 +1,0 @@
-# docker compose up --build
-services:
-  api:
-    build: . # Build the image from the Dockerfile in the current directory else ./api
-    container_name: fastapi
-    command: sh -c "uvicorn main:app --reload --port=8000 --host=0.0.0.0"
-    ports:
-      - 8000:8000
