@@ -10,7 +10,7 @@
 - **Deployed Link:** [Tomato Disease Detection Website](https://tomato-disease-cnn.vercel.app)
 
 ### Mobile Application
-- **Expo Go Link:** `exp://u.expo.dev/update/cab3f727-1be2-4e4a-b797-e511c6753903`
+- **Expo Go Link:** `https://expo.dev/preview/update?message=feat%3A%20update%20api%20endpoint&updateRuntimeVersion=1.0.0&createdAt=2024-09-21T17%3A28%3A04.070Z&slug=exp&projectId=78fc2148-1209-4d5e-845b-07e658b0f98d&group=8ae1a3ae-ec20-4a89-bef4-85698a2f6408`
 - **Instructions:**
   - Download the Expo Go app from the App Store or Google Play Store.
   - Click on the link and paste it in your browser to open the app.
